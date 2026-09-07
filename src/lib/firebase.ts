@@ -9,6 +9,7 @@ const firebaseConfig = {
   storageBucket: "posture-guard-e4eb6.firebasestorage.app",
   messagingSenderId: "188848975344",
   appId: "1:188848975344:web:ccfd1a5f194b9958cf4135",
+  
 };
 
 const app = initializeApp(firebaseConfig);
