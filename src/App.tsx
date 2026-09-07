@@ -1,9 +1,11 @@
 import DistanceGauge from "./components/dashboard/DistanceGauge"
 import SessionTimer from "./components/dashboard/SessionTimer"
 import StatusCard from "./components/dashboard/StatusCard"
+import PostureScore from "./components/dashboard/PostureScore";
+import { useRealtimeDistance } from "./hooks/useRealtimeDistance";
 
 function App() {
-  const distance = 30; 
+  const distance = useRealtimeDistance();
 
   return (
     <div className="text-center min-h-screen bg-gray-50 p-6">
@@ -13,6 +15,7 @@ function App() {
         <DistanceGauge distance={distance} />
         <StatusCard distance={distance} />
         <SessionTimer />
+        <PostureScore score={40} />
       </div>
     </div>
   );
