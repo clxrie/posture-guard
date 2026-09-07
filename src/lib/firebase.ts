@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDK71B7Jrw6fyvAH1-MwZJH_O4BHNFlDuU",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "posture-guard-e4eb6.firebaseapp.com",
   databaseURL: "https://posture-guard-e4eb6-default-rtdb.firebaseio.com",
   projectId: "posture-guard-e4eb6",

@@ -23,3 +23,4 @@ firebase-key.json
 *.njsproj
 *.sln
 *.sw?
+.env
